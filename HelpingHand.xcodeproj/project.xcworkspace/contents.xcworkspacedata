@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:parse-library-1.7.4">
+   </FileRef>
+   <FileRef
       location = "self:HelpingHand.xcodeproj">
    </FileRef>
 </Workspace>

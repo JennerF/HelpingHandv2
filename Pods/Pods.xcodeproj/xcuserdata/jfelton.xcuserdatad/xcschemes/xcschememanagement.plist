@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-HelpingHand-Bolts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-HelpingHand-FXForms.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-HelpingHand-Parse.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-HelpingHand.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>393D0483F30673AD4E463A04</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>789F55B78F3CBED623B4BD5F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>90E518D989DE0265C51B5CA6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A82D4F40627EC4DBA27E0D37</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -15,10 +15,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        Parse.setApplicationId("LR41mL0naJh6PKnEoT7Get6ufmPJwEw3OuR0rkLu", clientKey: "JEuf4VfSPij6suE84ev3nSbcPyzlHtwSE83bVtju")
+        
         // Override point for customization after application launch.
-        return true
-    }
+        self.window = UIWindow.init(frame: UIScreen.mainScreen().bounds)
+        // Override point for customization after application launch.
+        self.window!.backgroundColor = UIColor.whiteColor()
+        
+        pushMainView()
 
+        return true
+        }
+    
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
@@ -40,6 +49,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    func pushMainView() {
+        //var controller: CreateEventFormViewController! = CreateEventFormViewController()
+        //controller?.formController.form = CreateEventForm()
+        var controller: MainPageFormViewController! = MainPageFormViewController()
+        controller?.formController.form = MainPageForm()
+
+        var navController: UINavigationController? = UINavigationController(rootViewController: controller)
+        navController?.title = "Caring for the Community"
+        self.window!.rootViewController = navController
+        self.window!.makeKeyAndVisible()
+    }
+    
+
 
 
 }
