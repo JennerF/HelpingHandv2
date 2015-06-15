@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         self.window!.backgroundColor = UIColor.whiteColor()
         
-        pushMainView()
+        checkForLogin()
 
         return true
         }
@@ -51,8 +51,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func pushMainView() {
-        //var controller: CreateEventFormViewController! = CreateEventFormViewController()
-        //controller?.formController.form = CreateEventForm()
         var controller: MainPageFormViewController! = MainPageFormViewController()
         controller?.formController.form = MainPageForm()
 
@@ -62,6 +60,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window!.makeKeyAndVisible()
     }
     
+    func pushSignUpView() {
+        var controller: NewUserFormViewController! = NewUserFormViewController()
+        controller?.formController.form = NewUserForm()
+        
+        var navController: UINavigationController? = UINavigationController(rootViewController: controller)
+        navController?.title = "Caring for the Community"
+        self.window!.rootViewController = navController
+        self.window!.makeKeyAndVisible()
+    }
+
+    func checkForLogin() {
+        if ((PFUser.currentUser()) != nil) {
+            pushMainView()
+        }
+        else {
+            pushSignUpView()
+        }
+    }
 
 
 

@@ -10,7 +10,6 @@ import UIKit
 class MainPageFormViewController: FXFormViewController {
     
     override func awakeFromNib() {
-        
         formController.form = MainPageForm()
     }
     
@@ -21,10 +20,10 @@ class MainPageFormViewController: FXFormViewController {
         self.navigationController?.pushViewController(controller, animated: true)
     }
     
-    func showAllEventsSelector() {
-        var controller: EventsViewController! = EventsViewController()
-        self.navigationController?.pushViewController(controller, animated: true)
-    }
+    //func showAllEventsSelector() {
+      //  var controller: EventsViewController! = EventsViewController()
+        //self.navigationController?.pushViewController(controller, animated: true)
+    //}
     
     
 }

@@ -8,10 +8,13 @@
 
 import Foundation
 
-class Employee : PFObject, PFSubclassing {
+class Employee : PFUser, PFSubclassing {
     
-    @NSManaged var name: String
+    @NSManaged var firstName: String
     @NSManaged var team: String
+    @NSManaged var contactPhone: NSNumber
+    @NSManaged var profileImage: PFFile
+    
     @NSManaged var events: [VolunteerEvent]
     @NSManaged var hoursAllowed: Double
     @NSManaged var hoursWorked: Double
@@ -25,10 +28,5 @@ class Employee : PFObject, PFSubclassing {
             self.registerSubclass()
         }
     }
-    
-    class func parseClassName() -> String {
-        return "Employee"
-    }
-    
     
 }
