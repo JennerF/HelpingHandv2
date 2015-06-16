@@ -15,6 +15,7 @@ class MainPageFormViewController: FXFormViewController {
     
     override func viewWillAppear(animated: Bool) {
         self.navigationItem.setHidesBackButton(true, animated: true)
+        self.title = "We Care and Give Back"
     }
     
     
@@ -24,10 +25,10 @@ class MainPageFormViewController: FXFormViewController {
         self.navigationController?.pushViewController(controller, animated: true)
     }
     
-    //func showAllEventsSelector() {
-      //  var controller: EventsViewController! = EventsViewController()
-        //self.navigationController?.pushViewController(controller, animated: true)
-    //}
+    func showAllEventsSelector() {
+        var controller: EventsTableViewController = EventsTableViewController()
+        self.navigationController?.pushViewController(controller, animated: true)
+    }
     
     
 }

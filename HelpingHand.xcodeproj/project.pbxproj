@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		522550461B3095BE009A52AB /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522550451B3095BE009A52AB /* EventsTableViewController.swift */; };
+		522550481B30A26C009A52AB /* VolunteerEventsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522550471B30A26C009A52AB /* VolunteerEventsModel.swift */; };
+		5225504A1B30B9DE009A52AB /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522550491B30B9DE009A52AB /* EventViewController.swift */; };
+		5225504C1B30C1E4009A52AB /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5225504B1B30C1E4009A52AB /* EventView.swift */; };
 		522D46EE1B2F43B7008F4106 /* CreateEventForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D46ED1B2F43B7008F4106 /* CreateEventForm.swift */; };
 		522D46F01B2F4936008F4106 /* CreateEventFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D46EF1B2F4936008F4106 /* CreateEventFormViewController.swift */; };
 		522D46F21B2F49AD008F4106 /* ISO3166CountryValueTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D46F11B2F49AD008F4106 /* ISO3166CountryValueTransformer.swift */; };
 		522D46F41B2F786C008F4106 /* MainPageForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D46F31B2F786C008F4106 /* MainPageForm.swift */; };
 		522D46F61B2F7AF0008F4106 /* MainPageFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D46F51B2F7AF0008F4106 /* MainPageFormViewController.swift */; };
-		522D46F81B2F86DE008F4106 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D46F71B2F86DE008F4106 /* EventsViewController.swift */; };
 		522D46FA1B2F8B97008F4106 /* NewUserForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D46F91B2F8B97008F4106 /* NewUserForm.swift */; };
 		522D46FC1B2F8DAD008F4106 /* NewUserFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D46FB1B2F8DAD008F4106 /* NewUserFormViewController.swift */; };
 		524BFA511B2B82DD00AB642D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524BFA501B2B82DD00AB642D /* AppDelegate.swift */; };
@@ -37,12 +40,15 @@
 
 /* Begin PBXFileReference section */
 		40ED39A8F8D75F0E82CD7ED7 /* Pods-HelpingHand.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelpingHand.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelpingHand/Pods-HelpingHand.debug.xcconfig"; sourceTree = "<group>"; };
+		522550451B3095BE009A52AB /* EventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
+		522550471B30A26C009A52AB /* VolunteerEventsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolunteerEventsModel.swift; sourceTree = "<group>"; };
+		522550491B30B9DE009A52AB /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		5225504B1B30C1E4009A52AB /* EventView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
 		522D46ED1B2F43B7008F4106 /* CreateEventForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEventForm.swift; sourceTree = "<group>"; };
 		522D46EF1B2F4936008F4106 /* CreateEventFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEventFormViewController.swift; sourceTree = "<group>"; };
 		522D46F11B2F49AD008F4106 /* ISO3166CountryValueTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISO3166CountryValueTransformer.swift; sourceTree = "<group>"; };
 		522D46F31B2F786C008F4106 /* MainPageForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageForm.swift; sourceTree = "<group>"; };
 		522D46F51B2F7AF0008F4106 /* MainPageFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageFormViewController.swift; sourceTree = "<group>"; };
-		522D46F71B2F86DE008F4106 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		522D46F91B2F8B97008F4106 /* NewUserForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewUserForm.swift; sourceTree = "<group>"; };
 		522D46FB1B2F8DAD008F4106 /* NewUserFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewUserFormViewController.swift; sourceTree = "<group>"; };
 		524BFA4B1B2B82DD00AB642D /* HelpingHand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelpingHand.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,9 +93,10 @@
 				522D46EF1B2F4936008F4106 /* CreateEventFormViewController.swift */,
 				522D46F31B2F786C008F4106 /* MainPageForm.swift */,
 				522D46F51B2F7AF0008F4106 /* MainPageFormViewController.swift */,
-				522D46F71B2F86DE008F4106 /* EventsViewController.swift */,
 				522D46F91B2F8B97008F4106 /* NewUserForm.swift */,
 				522D46FB1B2F8DAD008F4106 /* NewUserFormViewController.swift */,
+				522550451B3095BE009A52AB /* EventsTableViewController.swift */,
+				522550491B30B9DE009A52AB /* EventViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -161,6 +168,7 @@
 			children = (
 				524BFA721B2B861900AB642D /* VolunteerEventModel.swift */,
 				524BFA751B2B879C00AB642D /* EmployeeModel.swift */,
+				522550471B30A26C009A52AB /* VolunteerEventsModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -168,6 +176,7 @@
 		524BFA711B2B85F100AB642D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5225504B1B30C1E4009A52AB /* EventView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -324,17 +333,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				524BFA511B2B82DD00AB642D /* AppDelegate.swift in Sources */,
+				522550461B3095BE009A52AB /* EventsTableViewController.swift in Sources */,
 				522D46FA1B2F8B97008F4106 /* NewUserForm.swift in Sources */,
+				522550481B30A26C009A52AB /* VolunteerEventsModel.swift in Sources */,
 				522D46F21B2F49AD008F4106 /* ISO3166CountryValueTransformer.swift in Sources */,
 				522D46F01B2F4936008F4106 /* CreateEventFormViewController.swift in Sources */,
 				522D46F41B2F786C008F4106 /* MainPageForm.swift in Sources */,
 				524BFA731B2B861900AB642D /* VolunteerEventModel.swift in Sources */,
 				522D46EE1B2F43B7008F4106 /* CreateEventForm.swift in Sources */,
+				5225504C1B30C1E4009A52AB /* EventView.swift in Sources */,
+				5225504A1B30B9DE009A52AB /* EventViewController.swift in Sources */,
 				522D46F61B2F7AF0008F4106 /* MainPageFormViewController.swift in Sources */,
 				524BFA761B2B879C00AB642D /* EmployeeModel.swift in Sources */,
 				524BFA8F1B2B8E3800AB642D /* parseBridge.m in Sources */,
 				522D46FC1B2F8DAD008F4106 /* NewUserFormViewController.swift in Sources */,
-				522D46F81B2F86DE008F4106 /* EventsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

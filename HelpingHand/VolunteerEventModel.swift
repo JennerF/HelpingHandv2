@@ -37,5 +37,16 @@ class VolunteerEvent : PFObject, PFSubclassing {
         return "VolunteerEvent"
     }
     
-    
+    func getImage() -> UIImage {
+        var image : UIImage = UIImage()
+        
+        eventImage.getDataInBackgroundWithBlock({
+            (imageData: NSData?, error: NSError?) -> Void in
+            if (error == nil) {
+                image = UIImage(data: imageData!)!
+                
+            }})
+        return image
+    }
+
 }
