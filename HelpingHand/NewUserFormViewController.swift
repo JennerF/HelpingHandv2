@@ -32,19 +32,9 @@ class NewUserFormViewController: FXFormViewController {
     func submitLogin(cell: FXFormFieldCellProtocol) {
         let form = cell.field.form as! NewUserForm
         
-        PFUser.logInWithUsername(form.contactEmail!, password: form.password!)
+        PFUser.logInWithUsernameInBackground(form.contactEmail!, password: form.password!, block: {(user,error) in NSLog("test")})
         
-        if (PFUser.currentUser() != nil) {
-            NSLog("Login sucessful")
-            var controller: MainPageFormViewController! = MainPageFormViewController()
-            controller?.formController.form = MainPageForm()
-            self.navigationController?.pushViewController(controller, animated: true)
-        }
-        
-        else {
-            NSLog("ERROR - Login Failed")
-        }
-
+        self.switchToMainView()
     }
     
     func validation(form: NewUserForm) -> Bool {
@@ -71,8 +61,9 @@ class NewUserFormViewController: FXFormViewController {
             if (success) {
                 // The object has been saved.
                 NSLog("Employee has been created")
-                self.navigationController?.popViewControllerAnimated(true)
-                self.finishLogin()
+                
+                self.switchToMainView()
+                
             } else {
                 // There was a problem, check error.description
                 NSLog("ERROR - employee has not been saved")
@@ -80,12 +71,10 @@ class NewUserFormViewController: FXFormViewController {
         }
     }
     
-    func finishLogin() {
-        var controller: MainPageFormViewController! = MainPageFormViewController()
-        controller?.formController.form = MainPageForm()
+    func switchToMainView() {
+        var controller : MainPageFormViewController! = MainPageFormViewController()
+        controller.formController.form = MainPageForm()
         self.navigationController?.pushViewController(controller, animated: true)
     }
-    
-    
     
 }

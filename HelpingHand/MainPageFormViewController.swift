@@ -13,6 +13,10 @@ class MainPageFormViewController: FXFormViewController {
         formController.form = MainPageForm()
     }
     
+    override func viewWillAppear(animated: Bool) {
+        self.navigationItem.setHidesBackButton(true, animated: true)
+    }
+    
     
     func createEventSelector() {
         var controller: CreateEventFormViewController! = CreateEventFormViewController()

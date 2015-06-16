@@ -18,12 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         Parse.setApplicationId("LR41mL0naJh6PKnEoT7Get6ufmPJwEw3OuR0rkLu", clientKey: "JEuf4VfSPij6suE84ev3nSbcPyzlHtwSE83bVtju")
         
-        // Override point for customization after application launch.
-        self.window = UIWindow.init(frame: UIScreen.mainScreen().bounds)
-        // Override point for customization after application launch.
-        self.window!.backgroundColor = UIColor.whiteColor()
-        
-        checkForLogin()
+        createInitialWindow()
 
         return true
         }
@@ -68,6 +63,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navController?.title = "Caring for the Community"
         self.window!.rootViewController = navController
         self.window!.makeKeyAndVisible()
+    }
+    
+    func createInitialWindow() {
+        // Override point for customization after application launch.
+        self.window = UIWindow.init(frame: UIScreen.mainScreen().bounds)
+        // Override point for customization after application launch.
+        self.window!.backgroundColor = UIColor.whiteColor()
+        
+        checkForLogin()
     }
 
     func checkForLogin() {
