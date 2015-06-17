@@ -11,6 +11,7 @@
 		522550481B30A26C009A52AB /* VolunteerEventsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522550471B30A26C009A52AB /* VolunteerEventsModel.swift */; };
 		5225504A1B30B9DE009A52AB /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522550491B30B9DE009A52AB /* EventViewController.swift */; };
 		5225504C1B30C1E4009A52AB /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5225504B1B30C1E4009A52AB /* EventView.swift */; };
+		5225504E1B30E64D009A52AB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5225504D1B30E64D009A52AB /* Constants.swift */; };
 		522D46EE1B2F43B7008F4106 /* CreateEventForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D46ED1B2F43B7008F4106 /* CreateEventForm.swift */; };
 		522D46F01B2F4936008F4106 /* CreateEventFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D46EF1B2F4936008F4106 /* CreateEventFormViewController.swift */; };
 		522D46F21B2F49AD008F4106 /* ISO3166CountryValueTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D46F11B2F49AD008F4106 /* ISO3166CountryValueTransformer.swift */; };
@@ -44,6 +45,7 @@
 		522550471B30A26C009A52AB /* VolunteerEventsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolunteerEventsModel.swift; sourceTree = "<group>"; };
 		522550491B30B9DE009A52AB /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		5225504B1B30C1E4009A52AB /* EventView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
+		5225504D1B30E64D009A52AB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		522D46ED1B2F43B7008F4106 /* CreateEventForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEventForm.swift; sourceTree = "<group>"; };
 		522D46EF1B2F4936008F4106 /* CreateEventFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEventFormViewController.swift; sourceTree = "<group>"; };
 		522D46F11B2F49AD008F4106 /* ISO3166CountryValueTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISO3166CountryValueTransformer.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				524BFA4F1B2B82DD00AB642D /* Info.plist */,
+				5225504D1B30E64D009A52AB /* Constants.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				522D46F21B2F49AD008F4106 /* ISO3166CountryValueTransformer.swift in Sources */,
 				522D46F01B2F4936008F4106 /* CreateEventFormViewController.swift in Sources */,
 				522D46F41B2F786C008F4106 /* MainPageForm.swift in Sources */,
+				5225504E1B30E64D009A52AB /* Constants.swift in Sources */,
 				524BFA731B2B861900AB642D /* VolunteerEventModel.swift in Sources */,
 				522D46EE1B2F43B7008F4106 /* CreateEventForm.swift in Sources */,
 				5225504C1B30C1E4009A52AB /* EventView.swift in Sources */,

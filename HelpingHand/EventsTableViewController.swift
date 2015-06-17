@@ -27,7 +27,9 @@ class EventsTableViewController: UITableViewController {
     
     override func viewWillAppear(animated: Bool) {
         events.getAllEvents()
+        self.title = "Volunteer Events"
     }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -14,6 +14,12 @@ class CreateEventFormViewController: FXFormViewController {
         formController.form = CreateEventForm()
     }
     
+    override func viewWillAppear(animated: Bool) {
+        var cancelButton : UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Cancel, target:self, action: "cancelEventCreation")
+        self.navigationItem.setLeftBarButtonItem(cancelButton, animated: true)
+        self.title = "Create New Event"
+    }
+    
     func submitCreateEventForm(cell: FXFormFieldCellProtocol) {
         
         //we can lookup the form from the cell if we want, like this:
@@ -56,6 +62,10 @@ class CreateEventFormViewController: FXFormViewController {
                 NSLog("ERROR - event has not been saved")
             }
         }
+    }
+    
+    func cancelEventCreation() {
+        self.navigationController?.popViewControllerAnimated(true)
     }
     
     
