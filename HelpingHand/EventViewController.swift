@@ -11,34 +11,45 @@ import UIKit
 class EventViewController: UIViewController {
     
     var event : VolunteerEvent!
-    var screenWidth : CGFloat = 0
-    var screenHeight : CGFloat = 0
+    @IBOutlet weak var eventName: UILabel!
+    @IBOutlet weak var eventImage: UIImageView!
+    @IBOutlet weak var eventDescription: UITextView!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        let screenSize : CGRect = UIScreen.mainScreen().bounds
-        screenWidth = screenSize.width
-        screenHeight = screenSize.height
-        
-        addEventSubview()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewWillAppear(animated: Bool) {
+        configureName()
+        configureImage()
+        configureDescription()
     }
     
-    func addEventSubview() {
-        var eventView : EventView = EventView(frame: CGRectMake(0.0,0.0,screenWidth,screenHeight))
-        eventView.addTitle(event.eventName)
-        eventView.addEventDescription(event.eventDescription)
-        eventView.addEventImage(event.getImage())
-        self.view.addSubview(eventView)
-        NSLog("We are creating a view")
+    func configureName() {
+        eventName.text = event.eventName
     }
+    
+    func configureImage() {
+        eventImage.image = event.getImage()
+    }
+    
+    func configureDescription() {
+        eventDescription.text = event.eventDescription
+        eventDescription.editable = false
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
 

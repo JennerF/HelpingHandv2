@@ -75,9 +75,17 @@ class EventsTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         var event : VolunteerEvent = events.eventList[indexPath.row]
-        var eventViewController : EventViewController = EventViewController()
+        //var eventViewController : EventViewController = EventViewController()
+        //eventViewController.event = event
+        //self.navigationController?.pushViewController(eventViewController, animated: true)
+        
+        var storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        var eventViewController : EventViewController = storyboard.instantiateViewControllerWithIdentifier("eventViewController") as! EventViewController
+        
         eventViewController.event = event
+        
         self.navigationController?.pushViewController(eventViewController, animated: true)
+        
     }
     
 

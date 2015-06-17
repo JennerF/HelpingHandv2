@@ -50,7 +50,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         controller?.formController.form = MainPageForm()
 
         var navController: UINavigationController? = UINavigationController(rootViewController: controller)
-        navController?.title = "Caring for the Community"
         self.window!.rootViewController = navController
         self.window!.makeKeyAndVisible()
     }
@@ -60,7 +59,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         controller?.formController.form = NewUserForm()
         
         var navController: UINavigationController? = UINavigationController(rootViewController: controller)
-        navController?.title = "Caring for the Community"
         self.window!.rootViewController = navController
         self.window!.makeKeyAndVisible()
     }

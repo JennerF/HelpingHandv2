@@ -10,11 +10,9 @@
 		522550461B3095BE009A52AB /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522550451B3095BE009A52AB /* EventsTableViewController.swift */; };
 		522550481B30A26C009A52AB /* VolunteerEventsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522550471B30A26C009A52AB /* VolunteerEventsModel.swift */; };
 		5225504A1B30B9DE009A52AB /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522550491B30B9DE009A52AB /* EventViewController.swift */; };
-		5225504C1B30C1E4009A52AB /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5225504B1B30C1E4009A52AB /* EventView.swift */; };
 		5225504E1B30E64D009A52AB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5225504D1B30E64D009A52AB /* Constants.swift */; };
 		522D46EE1B2F43B7008F4106 /* CreateEventForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D46ED1B2F43B7008F4106 /* CreateEventForm.swift */; };
 		522D46F01B2F4936008F4106 /* CreateEventFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D46EF1B2F4936008F4106 /* CreateEventFormViewController.swift */; };
-		522D46F21B2F49AD008F4106 /* ISO3166CountryValueTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D46F11B2F49AD008F4106 /* ISO3166CountryValueTransformer.swift */; };
 		522D46F41B2F786C008F4106 /* MainPageForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D46F31B2F786C008F4106 /* MainPageForm.swift */; };
 		522D46F61B2F7AF0008F4106 /* MainPageFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D46F51B2F7AF0008F4106 /* MainPageFormViewController.swift */; };
 		522D46FA1B2F8B97008F4106 /* NewUserForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D46F91B2F8B97008F4106 /* NewUserForm.swift */; };
@@ -25,7 +23,7 @@
 		524BFA671B2B82DD00AB642D /* HelpingHandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524BFA661B2B82DD00AB642D /* HelpingHandTests.swift */; };
 		524BFA731B2B861900AB642D /* VolunteerEventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524BFA721B2B861900AB642D /* VolunteerEventModel.swift */; };
 		524BFA761B2B879C00AB642D /* EmployeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524BFA751B2B879C00AB642D /* EmployeeModel.swift */; };
-		524BFA8F1B2B8E3800AB642D /* parseBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 524BFA8E1B2B8E3800AB642D /* parseBridge.m */; };
+		52ED13851B31EED400C6B5BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52ED13841B31EED400C6B5BD /* Main.storyboard */; };
 		B35606AB04D097AD1B54C9F7 /* libPods-HelpingHand.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6EBB376E180BE1A21657E79 /* libPods-HelpingHand.a */; };
 /* End PBXBuildFile section */
 
@@ -44,11 +42,9 @@
 		522550451B3095BE009A52AB /* EventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
 		522550471B30A26C009A52AB /* VolunteerEventsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolunteerEventsModel.swift; sourceTree = "<group>"; };
 		522550491B30B9DE009A52AB /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
-		5225504B1B30C1E4009A52AB /* EventView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
 		5225504D1B30E64D009A52AB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		522D46ED1B2F43B7008F4106 /* CreateEventForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEventForm.swift; sourceTree = "<group>"; };
 		522D46EF1B2F4936008F4106 /* CreateEventFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEventFormViewController.swift; sourceTree = "<group>"; };
-		522D46F11B2F49AD008F4106 /* ISO3166CountryValueTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISO3166CountryValueTransformer.swift; sourceTree = "<group>"; };
 		522D46F31B2F786C008F4106 /* MainPageForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageForm.swift; sourceTree = "<group>"; };
 		522D46F51B2F7AF0008F4106 /* MainPageFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageFormViewController.swift; sourceTree = "<group>"; };
 		522D46F91B2F8B97008F4106 /* NewUserForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewUserForm.swift; sourceTree = "<group>"; };
@@ -63,8 +59,8 @@
 		524BFA661B2B82DD00AB642D /* HelpingHandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpingHandTests.swift; sourceTree = "<group>"; };
 		524BFA721B2B861900AB642D /* VolunteerEventModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolunteerEventModel.swift; sourceTree = "<group>"; };
 		524BFA751B2B879C00AB642D /* EmployeeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeModel.swift; sourceTree = "<group>"; };
-		524BFA8D1B2B8E3700AB642D /* HelpingHand-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelpingHand-Bridging-Header.h"; sourceTree = "<group>"; };
-		524BFA8E1B2B8E3800AB642D /* parseBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = parseBridge.m; sourceTree = "<group>"; };
+		524BFA8D1B2B8E3700AB642D /* HelpingHand-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelpingHand-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		52ED13841B31EED400C6B5BD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A4D22C74E5E9AF3A9137B11A /* Pods-HelpingHand.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelpingHand.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelpingHand/Pods-HelpingHand.release.xcconfig"; sourceTree = "<group>"; };
 		A6EBB376E180BE1A21657E79 /* libPods-HelpingHand.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HelpingHand.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -106,11 +102,9 @@
 		524BFA421B2B82DD00AB642D = {
 			isa = PBXGroup;
 			children = (
-				524BFA8E1B2B8E3800AB642D /* parseBridge.m */,
 				524BFA4D1B2B82DD00AB642D /* HelpingHand */,
 				524BFA631B2B82DD00AB642D /* HelpingHandTests */,
 				524BFA4C1B2B82DD00AB642D /* Products */,
-				524BFA8D1B2B8E3700AB642D /* HelpingHand-Bridging-Header.h */,
 				5B187922F495A082DA34F1FB /* Pods */,
 				8A04954027513AE95DDA4203 /* Frameworks */,
 			);
@@ -131,11 +125,8 @@
 				522D46EC1B2F439D008F4106 /* View Controllers */,
 				524BFA711B2B85F100AB642D /* Views */,
 				524BFA701B2B85E900AB642D /* Models */,
-				524BFA501B2B82DD00AB642D /* AppDelegate.swift */,
-				524BFA571B2B82DD00AB642D /* Images.xcassets */,
-				524BFA591B2B82DD00AB642D /* LaunchScreen.xib */,
+				52ED13831B31EEB100C6B5BD /* Other */,
 				524BFA4E1B2B82DD00AB642D /* Supporting Files */,
-				522D46F11B2F49AD008F4106 /* ISO3166CountryValueTransformer.swift */,
 			);
 			path = HelpingHand;
 			sourceTree = "<group>";
@@ -143,6 +134,8 @@
 		524BFA4E1B2B82DD00AB642D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				524BFA8D1B2B8E3700AB642D /* HelpingHand-Bridging-Header.h */,
+				524BFA571B2B82DD00AB642D /* Images.xcassets */,
 				524BFA4F1B2B82DD00AB642D /* Info.plist */,
 				5225504D1B30E64D009A52AB /* Constants.swift */,
 			);
@@ -179,9 +172,18 @@
 		524BFA711B2B85F100AB642D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				5225504B1B30C1E4009A52AB /* EventView.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		52ED13831B31EEB100C6B5BD /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				524BFA591B2B82DD00AB642D /* LaunchScreen.xib */,
+				524BFA501B2B82DD00AB642D /* AppDelegate.swift */,
+				52ED13841B31EED400C6B5BD /* Main.storyboard */,
+			);
+			name = Other;
 			sourceTree = "<group>";
 		};
 		5B187922F495A082DA34F1FB /* Pods */ = {
@@ -283,6 +285,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52ED13851B31EED400C6B5BD /* Main.storyboard in Resources */,
 				524BFA5B1B2B82DD00AB642D /* LaunchScreen.xib in Resources */,
 				524BFA581B2B82DD00AB642D /* Images.xcassets in Resources */,
 			);
@@ -339,17 +342,14 @@
 				522550461B3095BE009A52AB /* EventsTableViewController.swift in Sources */,
 				522D46FA1B2F8B97008F4106 /* NewUserForm.swift in Sources */,
 				522550481B30A26C009A52AB /* VolunteerEventsModel.swift in Sources */,
-				522D46F21B2F49AD008F4106 /* ISO3166CountryValueTransformer.swift in Sources */,
 				522D46F01B2F4936008F4106 /* CreateEventFormViewController.swift in Sources */,
 				522D46F41B2F786C008F4106 /* MainPageForm.swift in Sources */,
 				5225504E1B30E64D009A52AB /* Constants.swift in Sources */,
 				524BFA731B2B861900AB642D /* VolunteerEventModel.swift in Sources */,
 				522D46EE1B2F43B7008F4106 /* CreateEventForm.swift in Sources */,
-				5225504C1B30C1E4009A52AB /* EventView.swift in Sources */,
 				5225504A1B30B9DE009A52AB /* EventViewController.swift in Sources */,
 				522D46F61B2F7AF0008F4106 /* MainPageFormViewController.swift in Sources */,
 				524BFA761B2B879C00AB642D /* EmployeeModel.swift in Sources */,
-				524BFA8F1B2B8E3800AB642D /* parseBridge.m in Sources */,
 				522D46FC1B2F8DAD008F4106 /* NewUserFormViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
