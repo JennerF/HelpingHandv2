@@ -22,17 +22,6 @@ class VolunteerEvent : PFObject, PFSubclassing {
     @NSManaged var eventOrganizer: Employee
     @NSManaged var eventAttendees: [Employee]
     
-    
-    //Parse
-    override class func initialize() {
-        struct Static {
-            static var onceToken : dispatch_once_t = 0;
-        }
-        dispatch_once(&Static.onceToken) {
-            self.registerSubclass()
-        }
-    }
-    
     class func parseClassName() -> String {
         return "VolunteerEvent"
     }

@@ -17,6 +17,7 @@
 		522D46F61B2F7AF0008F4106 /* MainPageFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D46F51B2F7AF0008F4106 /* MainPageFormViewController.swift */; };
 		522D46FA1B2F8B97008F4106 /* NewUserForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D46F91B2F8B97008F4106 /* NewUserForm.swift */; };
 		522D46FC1B2F8DAD008F4106 /* NewUserFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D46FB1B2F8DAD008F4106 /* NewUserFormViewController.swift */; };
+		5231FD2B1B321151001C3244 /* addIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5231FD2A1B321151001C3244 /* addIcon.png */; };
 		524BFA511B2B82DD00AB642D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524BFA501B2B82DD00AB642D /* AppDelegate.swift */; };
 		524BFA581B2B82DD00AB642D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 524BFA571B2B82DD00AB642D /* Images.xcassets */; };
 		524BFA5B1B2B82DD00AB642D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 524BFA591B2B82DD00AB642D /* LaunchScreen.xib */; };
@@ -49,6 +50,7 @@
 		522D46F51B2F7AF0008F4106 /* MainPageFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageFormViewController.swift; sourceTree = "<group>"; };
 		522D46F91B2F8B97008F4106 /* NewUserForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewUserForm.swift; sourceTree = "<group>"; };
 		522D46FB1B2F8DAD008F4106 /* NewUserFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewUserFormViewController.swift; sourceTree = "<group>"; };
+		5231FD2A1B321151001C3244 /* addIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addIcon.png; sourceTree = "<group>"; };
 		524BFA4B1B2B82DD00AB642D /* HelpingHand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelpingHand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		524BFA4F1B2B82DD00AB642D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		524BFA501B2B82DD00AB642D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,16 +89,31 @@
 		522D46EC1B2F439D008F4106 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				522D46ED1B2F43B7008F4106 /* CreateEventForm.swift */,
 				522D46EF1B2F4936008F4106 /* CreateEventFormViewController.swift */,
-				522D46F31B2F786C008F4106 /* MainPageForm.swift */,
 				522D46F51B2F7AF0008F4106 /* MainPageFormViewController.swift */,
-				522D46F91B2F8B97008F4106 /* NewUserForm.swift */,
 				522D46FB1B2F8DAD008F4106 /* NewUserFormViewController.swift */,
 				522550451B3095BE009A52AB /* EventsTableViewController.swift */,
 				522550491B30B9DE009A52AB /* EventViewController.swift */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		5231FD2C1B32115E001C3244 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				5231FD2A1B321151001C3244 /* addIcon.png */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
+		5231FD2D1B3211D9001C3244 /* Forms */ = {
+			isa = PBXGroup;
+			children = (
+				522D46F91B2F8B97008F4106 /* NewUserForm.swift */,
+				522D46F31B2F786C008F4106 /* MainPageForm.swift */,
+				522D46ED1B2F43B7008F4106 /* CreateEventForm.swift */,
+			);
+			name = Forms;
 			sourceTree = "<group>";
 		};
 		524BFA421B2B82DD00AB642D = {
@@ -122,6 +139,7 @@
 		524BFA4D1B2B82DD00AB642D /* HelpingHand */ = {
 			isa = PBXGroup;
 			children = (
+				5231FD2D1B3211D9001C3244 /* Forms */,
 				522D46EC1B2F439D008F4106 /* View Controllers */,
 				524BFA711B2B85F100AB642D /* Views */,
 				524BFA701B2B85E900AB642D /* Models */,
@@ -134,6 +152,7 @@
 		524BFA4E1B2B82DD00AB642D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5231FD2C1B32115E001C3244 /* Icons */,
 				524BFA8D1B2B8E3700AB642D /* HelpingHand-Bridging-Header.h */,
 				524BFA571B2B82DD00AB642D /* Images.xcassets */,
 				524BFA4F1B2B82DD00AB642D /* Info.plist */,
@@ -287,6 +306,7 @@
 			files = (
 				52ED13851B31EED400C6B5BD /* Main.storyboard in Resources */,
 				524BFA5B1B2B82DD00AB642D /* LaunchScreen.xib in Resources */,
+				5231FD2B1B321151001C3244 /* addIcon.png in Resources */,
 				524BFA581B2B82DD00AB642D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

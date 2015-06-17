@@ -14,11 +14,14 @@ class EventViewController: UIViewController {
     @IBOutlet weak var eventName: UILabel!
     @IBOutlet weak var eventImage: UIImageView!
     @IBOutlet weak var eventDescription: UITextView!
+    @IBOutlet weak var addEventButton: UIButton!
+    @IBOutlet weak var starEventButton: UIButton!
     
     override func viewWillAppear(animated: Bool) {
         configureName()
         configureImage()
         configureDescription()
+        configureAddEventButton()
     }
     
     func configureName() {
@@ -34,13 +37,29 @@ class EventViewController: UIViewController {
         eventDescription.editable = false
     }
     
+    func configureAddEventButton() {
+        addEventButton.frame = CGRectMake(0, 0, 100, 100)
+        let plusImage = UIImage(named: "addIcon.png") as UIImage!
+        addEventButton.setImage(plusImage, forState: UIControlState.Normal)
+        addEventButton.setTitle("", forState: UIControlState.Normal)
+        addEventButton.imageEdgeInsets = UIEdgeInsetsMake(25, 25, 25, 25)
+    }
     
     
-    
-    
-    
-    
-    
+    @IBAction func joinEvent(sender: AnyObject) {
+        var employee = Employee.currentUser()
+        employee.events.append(event)
+        employee.saveInBackgroundWithBlock(nil)
+        
+        print(event.eventAttendees)
+        print(employee)
+        print(event.eventAttendees)
+        
+        event.eventAttendees = []
+        
+        event.eventAttendees.append(employee)
+        event.saveInBackgroundWithBlock(nil)
+    }
     
     
     

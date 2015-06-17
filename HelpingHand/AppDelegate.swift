@@ -16,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
+        Employee.registerSubclass()
+        VolunteerEvent.registerSubclass()
+        
         Parse.setApplicationId("LR41mL0naJh6PKnEoT7Get6ufmPJwEw3OuR0rkLu", clientKey: "JEuf4VfSPij6suE84ev3nSbcPyzlHtwSE83bVtju")
         
         createInitialWindow()
