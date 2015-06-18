@@ -10,17 +10,76 @@ import Foundation
 
 class Employee : PFUser, PFSubclassing {
     
-    @NSManaged var firstName: String
-    @NSManaged var team: String
-    @NSManaged var contactPhone: NSNumber
-    @NSManaged var profileImage: PFFile
+    var firstName : String {
+        get {
+            return objectForKey("firstName") as? String ?? ""
+        }
+        set {
+            setObject(newValue, forKey: "firstName")
+        }
+    }
     
-    @NSManaged var events: [VolunteerEvent]
-    @NSManaged var hoursAllowed: Double
-    @NSManaged var hoursWorked: Double
+    var team : String {
+        get {
+            return objectForKey("team") as? String ?? "none"
+        }
+        set {
+            setObject(newValue, forKey: "team")
+        }
+    }
+
+    var contactPhone : NSNumber {
+        get {
+            return objectForKey("contactPhone") as? NSNumber ?? 0 //using 0 for phone number not set
+        }
+        set {
+            setObject(newValue, forKey: "firstName")
+        }
+    }
+    
+    var profileImage : PFFile {
+        get {
+            let image = UIImage(named: "blankProfilePicture.png") as UIImage!
+            let imageAsPF : PFFile = convertImageToPFFile(image)
+            return objectForKey("profileImage") as? PFFile ?? imageAsPF
+        }
+        set {
+            setObject(newValue, forKey: "profileImage")
+        }
+    }
+    
+    var events : [VolunteerEvent] {
+        get {
+            return objectForKey("events") as? [VolunteerEvent] ?? []
+        }
+        set {
+            setObject(newValue, forKey: "events")
+        }
+    }
+    
+    var hoursAllowed : Double {
+        get {
+            return objectForKey("hoursAllowed") as? Double ?? 0
+        }
+        set {
+            setObject(newValue, forKey: "hoursAllowed")
+        }
+    }
+    
+    var hoursWorked : Double {
+        get {
+            return objectForKey("hoursWorked") as? Double ?? 0
+        }
+        set {
+            setObject(newValue, forKey: "hoursWorked")
+        }
+    }
     
     override class func currentUser() -> Employee {
         return PFUser.currentUser() as! Employee
     }
     
+    func convertImageToPFFile(image : UIImage) -> PFFile {
+         return PFFile(data: UIImageJPEGRepresentation(image, 1.0))
+    }
 }

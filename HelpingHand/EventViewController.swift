@@ -50,13 +50,6 @@ class EventViewController: UIViewController {
         var employee = Employee.currentUser()
         employee.events.append(event)
         employee.saveInBackgroundWithBlock(nil)
-        
-        print(event.eventAttendees)
-        print(employee)
-        print(event.eventAttendees)
-        
-        event.eventAttendees = []
-        
         event.eventAttendees.append(employee)
         event.saveInBackgroundWithBlock(nil)
     }

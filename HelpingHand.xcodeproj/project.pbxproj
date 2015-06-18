@@ -24,6 +24,8 @@
 		524BFA671B2B82DD00AB642D /* HelpingHandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524BFA661B2B82DD00AB642D /* HelpingHandTests.swift */; };
 		524BFA731B2B861900AB642D /* VolunteerEventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524BFA721B2B861900AB642D /* VolunteerEventModel.swift */; };
 		524BFA761B2B879C00AB642D /* EmployeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524BFA751B2B879C00AB642D /* EmployeeModel.swift */; };
+		527377121B33417D00AB65B1 /* blankEventImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 527377101B33417D00AB65B1 /* blankEventImage.png */; };
+		527377131B33417D00AB65B1 /* blankProfilePicture.png in Resources */ = {isa = PBXBuildFile; fileRef = 527377111B33417D00AB65B1 /* blankProfilePicture.png */; };
 		52ED13851B31EED400C6B5BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52ED13841B31EED400C6B5BD /* Main.storyboard */; };
 		B35606AB04D097AD1B54C9F7 /* libPods-HelpingHand.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6EBB376E180BE1A21657E79 /* libPods-HelpingHand.a */; };
 /* End PBXBuildFile section */
@@ -62,6 +64,8 @@
 		524BFA721B2B861900AB642D /* VolunteerEventModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolunteerEventModel.swift; sourceTree = "<group>"; };
 		524BFA751B2B879C00AB642D /* EmployeeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeModel.swift; sourceTree = "<group>"; };
 		524BFA8D1B2B8E3700AB642D /* HelpingHand-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelpingHand-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		527377101B33417D00AB65B1 /* blankEventImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blankEventImage.png; sourceTree = "<group>"; };
+		527377111B33417D00AB65B1 /* blankProfilePicture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blankProfilePicture.png; sourceTree = "<group>"; };
 		52ED13841B31EED400C6B5BD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A4D22C74E5E9AF3A9137B11A /* Pods-HelpingHand.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelpingHand.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelpingHand/Pods-HelpingHand.release.xcconfig"; sourceTree = "<group>"; };
 		A6EBB376E180BE1A21657E79 /* libPods-HelpingHand.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HelpingHand.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,6 +156,7 @@
 		524BFA4E1B2B82DD00AB642D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5273770F1B3340F400AB65B1 /* Fill Images */,
 				5231FD2C1B32115E001C3244 /* Icons */,
 				524BFA8D1B2B8E3700AB642D /* HelpingHand-Bridging-Header.h */,
 				524BFA571B2B82DD00AB642D /* Images.xcassets */,
@@ -193,6 +198,15 @@
 			children = (
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		5273770F1B3340F400AB65B1 /* Fill Images */ = {
+			isa = PBXGroup;
+			children = (
+				527377101B33417D00AB65B1 /* blankEventImage.png */,
+				527377111B33417D00AB65B1 /* blankProfilePicture.png */,
+			);
+			name = "Fill Images";
 			sourceTree = "<group>";
 		};
 		52ED13831B31EEB100C6B5BD /* Other */ = {
@@ -307,7 +321,9 @@
 				52ED13851B31EED400C6B5BD /* Main.storyboard in Resources */,
 				524BFA5B1B2B82DD00AB642D /* LaunchScreen.xib in Resources */,
 				5231FD2B1B321151001C3244 /* addIcon.png in Resources */,
+				527377121B33417D00AB65B1 /* blankEventImage.png in Resources */,
 				524BFA581B2B82DD00AB642D /* Images.xcassets in Resources */,
+				527377131B33417D00AB65B1 /* blankProfilePicture.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

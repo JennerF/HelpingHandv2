@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HelpingHand/VolunteerEventModel.swift"
-            timestampString = "456272445.495677"
+            timestampString = "456343698.96367"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
             landmarkName = "getImage()"
             landmarkType = "5">
          </BreakpointContent>
@@ -230,48 +230,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HelpingHand/EventViewController.swift"
-            timestampString = "456273070.047188"
+            timestampString = "456344704.872838"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "joinEvent(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HelpingHand/EventViewController.swift"
-            timestampString = "456273066.226214"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
-            landmarkName = "joinEvent(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HelpingHand/EventViewController.swift"
-            timestampString = "456276121.020503"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "joinEvent(_:)"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "configureImage()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -282,12 +250,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HelpingHand/EventViewController.swift"
-            timestampString = "456276169.546802"
+            timestampString = "456344705.715338"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
-            landmarkName = "joinEvent(_:)"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "configureImage()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
