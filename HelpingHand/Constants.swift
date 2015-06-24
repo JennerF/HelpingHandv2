@@ -12,4 +12,6 @@ struct Constants {
     struct Boundaries {
         static let StatusBarHeight = UIApplication.sharedApplication().statusBarFrame.size.height
     }
+    
+    static let NumberOfAttendeesToBePopular = 10 // later change this to a floating value based on average of other events
 }

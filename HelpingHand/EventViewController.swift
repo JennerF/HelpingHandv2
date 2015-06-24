@@ -29,7 +29,8 @@ class EventViewController: UIViewController {
     }
     
     func configureImage() {
-        eventImage.image = event.getImage()
+        let image : UIImage = event.getImage()
+        eventImage.image = image
     }
     
     func configureDescription() {
@@ -39,7 +40,7 @@ class EventViewController: UIViewController {
     
     func configureAddEventButton() {
         addEventButton.frame = CGRectMake(0, 0, 100, 100)
-        let plusImage = UIImage(named: "addIcon.png") as UIImage!
+        let plusImage = UIImage(named: "addIcon") as UIImage!
         addEventButton.setImage(plusImage, forState: UIControlState.Normal)
         addEventButton.setTitle("", forState: UIControlState.Normal)
         addEventButton.imageEdgeInsets = UIEdgeInsetsMake(25, 25, 25, 25)

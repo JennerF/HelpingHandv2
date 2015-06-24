@@ -39,7 +39,7 @@ class Employee : PFUser, PFSubclassing {
     
     var profileImage : PFFile {
         get {
-            let image = UIImage(named: "blankProfilePicture.png") as UIImage!
+            let image = UIImage(named: "blankProfilePicture") as UIImage!
             let imageAsPF : PFFile = convertImageToPFFile(image)
             return objectForKey("profileImage") as? PFFile ?? imageAsPF
         }

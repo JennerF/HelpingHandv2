@@ -60,7 +60,7 @@ class VolunteerEvent : PFObject, PFSubclassing {
     
     var eventImage : PFFile {
         get {
-            let image = UIImage(named: "blankEventImage.png") as UIImage!
+            let image = UIImage(named: "blankEventImage") as UIImage!
             let imageAsPF : PFFile = convertImageToPFFile(image)
             return objectForKey("eventImage") as? PFFile ?? imageAsPF
         }
@@ -105,20 +105,33 @@ class VolunteerEvent : PFObject, PFSubclassing {
         }
     }
     
+    var attendeesCount : Int {
+        get {
+            return eventAttendees.count
+        }
+        set {
+            setObject(newValue, forKey: "attendeesCount")
+        }
+    }
+    
     class func parseClassName() -> String {
         return "VolunteerEvent"
     }
     
     func getImage() -> UIImage {
-        var image : UIImage = UIImage()
+        let image = eventImage
+        var newEventImage : UIImage = UIImage()
         
-        eventImage.getDataInBackgroundWithBlock({
-            (imageData: NSData?, error: NSError?) -> Void in
+        image.getDataInBackgroundWithBlock({
+            (imageData : NSData?, error : NSError?) -> Void in
             if (error == nil) {
-                image = UIImage(data: imageData!)!
-                
-            }})
-        return image
+                newEventImage = UIImage(data : imageData!)!
+            }
+            else {
+                NSLog("Failed to get image")
+            }
+        })
+        return newEventImage
     }
     
     func convertImageToPFFile(image : UIImage) -> PFFile {

@@ -48,7 +48,7 @@ class CreateEventFormViewController: FXFormViewController {
         event.eventDescription = form.eventDescription!
         event.eventURL = form.eventURL!.absoluteString!
         
-        event.eventImage = PFFile(data: UIImageJPEGRepresentation(form.eventImage, 1.0))
+        event.eventImage = PFFile(data: UIImagePNGRepresentation(form.eventImage))
         event.contactEmail = form.contactEmail!
         event.contactPhone = form.contactPhone!
         

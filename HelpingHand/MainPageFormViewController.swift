@@ -20,15 +20,26 @@ class MainPageFormViewController: FXFormViewController {
     
     
     func createEventSelector() {
-        var controller: CreateEventFormViewController! = CreateEventFormViewController()
+        var controller : CreateEventFormViewController! = CreateEventFormViewController()
         controller?.formController.form = CreateEventForm()
         self.navigationController?.pushViewController(controller, animated: true)
     }
     
     func showAllEventsSelector() {
-        var controller: EventsTableViewController = EventsTableViewController()
+        var controller : EventsTableViewController = EventsTableViewController()
+        controller.filter = "All"
         self.navigationController?.pushViewController(controller, animated: true)
     }
     
+    func showNextWeeksEventsSelector() {
+        var controller : EventsTableViewController = EventsTableViewController()
+        controller.filter = "NextWeek"
+        self.navigationController?.pushViewController(controller, animated: true)
+    }
     
+    func showPopularEventsSelector() {
+        var controller : EventsTableViewController = EventsTableViewController()
+        controller.filter = "Popular"
+        self.navigationController?.pushViewController(controller, animated: true)
+    }
 }

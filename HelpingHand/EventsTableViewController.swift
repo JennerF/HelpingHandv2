@@ -11,6 +11,7 @@ import UIKit
 class EventsTableViewController: UITableViewController {
 
     var events : VolunteerEvents = VolunteerEvents()
+    var filter : String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +27,7 @@ class EventsTableViewController: UITableViewController {
     }
     
     override func viewWillAppear(animated: Bool) {
-        events.getAllEvents()
+        events.getEvents(filter)
         self.title = "Volunteer Events"
     }
 

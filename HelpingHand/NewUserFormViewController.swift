@@ -48,7 +48,7 @@ class NewUserFormViewController: FXFormViewController {
         employee.firstName = form.firstName!
         employee.team = form.team!
         employee.contactPhone = form.contactPhone!
-        employee.profileImage = PFFile(data: UIImageJPEGRepresentation(form.profileImage, 1.0))
+        employee.profileImage = PFFile(data: UIImagePNGRepresentation(form.profileImage))
         employee.events = []
         employee.hoursAllowed = 0
         employee.hoursWorked = 0

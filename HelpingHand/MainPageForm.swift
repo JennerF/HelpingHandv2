@@ -12,8 +12,8 @@ class MainPageForm: NSObject, FXForm {
     
     var createEvent: Selector?
     var allEvents: Selector?
-
-    
+    var nextWeeksEvents: Selector?
+    var popularEvents: Selector?
     
     
     func fields() -> [AnyObject]! {
@@ -24,8 +24,11 @@ class MainPageForm: NSObject, FXForm {
             
             // Show all events
             [FXFormFieldKey: "allEvents", FXFormFieldAction: "showAllEventsSelector"],
-
             
+            // Show next weeks events
+            [FXFormFieldKey: "nextWeeksEvents", FXFormFieldAction: "showNextWeeksEventsSelector"],
+
+            [FXFormFieldKey: "popularEvents", FXFormFieldAction: "showPopularEventsSelector"],
         ]
     }
 }
